@@ -30,7 +30,7 @@ function retry (retries, delays, allowedStatuses, retryCallback) {}
 **Function params:**
 
 * `retries`: max number of retries to attempt
-* `delays`: delay between retries, in seconds. It can be either:
+* `delays`: delay between retries, in miliseconds. It can be either:
     * **a single number:** delay between all retries
     * **a list of numbers:** delays between the first few retries, in order given. If there are more retries than
       numbers on this list, any subsequent retries will be delayed by the last number on the list.
