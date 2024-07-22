@@ -18,9 +18,9 @@ jobs:
     strategy:
       matrix:
         node_container:
-          - node:16-alpine
           - node:18-alpine
           - node:20-alpine
+          - node:22-alpine
 
     env:
       NODE_CONTAINER: ${{ matrix.node_container }}
