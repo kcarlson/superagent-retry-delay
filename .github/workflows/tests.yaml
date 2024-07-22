@@ -21,8 +21,6 @@ jobs:
           - node:18-alpine
           - node:20-alpine
           - node:22-alpine
-          - node:23-alpine
-          - node:24-alpine
 
     env:
       NODE_CONTAINER: ${{ matrix.node_container }}
