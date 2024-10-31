@@ -151,6 +151,10 @@ function retry(retries, delays, allowedStatuses, retryCallback) {
     delays = [delays];
   }
 
+  if (!delays) {
+    delays = [0];
+  }
+
   const numberOfDelays = delays.length;
   const diff = retries - numberOfDelays;
   if (diff !== 0) {
