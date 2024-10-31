@@ -132,9 +132,9 @@ function callback(err, res) {
  * In milliseconds.
  *
  * @param {Number} retries
- * @param {Number[] || Number} delays
- * @param {Number[]} allowedStatuses
- * @param {retryCallback} retryCallback
+ * @param {Number[] || Number || undefined} delays
+ * @param {Number[] || undefined} allowedStatuses
+ * @param {retryCallback || undefined} retryCallback
  * @callback retryCallback
  * @return {retry}
  */
